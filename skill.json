@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "it-IT": {
+          "name": "alexa-introduction-talk",
+          "summary": "Applicazione di Prova di Flowing",
+          "description": "Applicazione di Prova di Flowing",
+          "examplePhrases": [
+            "Alexa Flowing Demo"
+          ],
+          "keywords": []
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Istruzioni per il testing",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-custom-alexa-introduction-talk-default"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

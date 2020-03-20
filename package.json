@@ -1,0 +1,6 @@
+{
+  "name": "alexa-introduction-talk",
+  "devDependencies": {
+    "standard": "^14.3.3"
+  }
+}
