@@ -10,6 +10,15 @@
             "Alexa Flowing Demo"
           ],
           "keywords": []
+        },
+        "en-US": {
+          "name": "alexa-introduction-talk",
+          "summary": "Test Flowing Application",
+          "description": "Test Flowing Application",
+          "examplePhrases": [
+            "Alexa Flowing Demo"
+          ],
+          "keywords": []
         }
       },
       "isAvailableWorldwide": true,
