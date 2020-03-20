@@ -16,6 +16,13 @@
                     "samples": []
                 },
                 {
+                    "name": "CounterIntent",
+                    "slots": [],
+                    "samples": [
+                        "counter"
+                    ]
+                },
+                {
                     "name": "HelloWorldIntent",
                     "slots": [],
                     "samples": [

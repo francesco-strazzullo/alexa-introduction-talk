@@ -16,14 +16,12 @@
                     "samples": []
                 },
                 {
-                    "name": "HelloWorldIntent",
+                    "name": "CounterIntent",
                     "slots": [],
                     "samples": [
-                        "ciao",
-                        "come stai",
-                        "dì ciao",
-                        "salutami",
-                        "salutarmi"
+                        "Dimmi il valore del mio contatore",
+                        "A che punto è il contatore",
+                        "Dimmi il valore"
                     ]
                 },
                 {
