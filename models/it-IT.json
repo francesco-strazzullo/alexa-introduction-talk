@@ -29,7 +29,12 @@
                     "slots": [
                         {
                             "name": "Value",
-                            "type": "AMAZON.NUMBER"
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "Aggiungi {Value}",
+                                "di {Value}",
+                                "{Value}"
+                            ]
                         }
                     ],
                     "samples": [
@@ -45,6 +50,42 @@
                 }
             ],
             "types": []
-        }
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "IncrementCounterIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Value",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1457794611995.38588306824"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1457794611995.38588306824",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Quanto vuoi aggiungere al contatore?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Di quanto vuoi incrementare il contatore?"
+                    }
+                ]
+            }
+        ]
     }
 }
