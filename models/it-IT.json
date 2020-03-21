@@ -65,7 +65,14 @@
                             "elicitationRequired": true,
                             "prompts": {
                                 "elicitation": "Elicit.Slot.1457794611995.38588306824"
-                            }
+                            },
+                            "validations": [
+                                {
+                                    "type": "isGreaterThan",
+                                    "prompt": "Slot.Validation.1142091770445.693641178430.1562293796498",
+                                    "value": "0"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -83,6 +90,15 @@
                     {
                         "type": "PlainText",
                         "value": "Di quanto vuoi incrementare il contatore?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1142091770445.693641178430.1562293796498",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Hai aggiunto un valore minore di zero, scegli un nuovo valore"
                     }
                 ]
             }
