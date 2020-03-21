@@ -10,10 +10,10 @@
         },
         "interactionModel": {
           "it-IT": {
-            "eTag": "fd9ee9257e29824296fbb8ef80b2036c"
+            "eTag": "2fc745f1c7385884202075d08041c226"
           },
           "en-US": {
-            "eTag": "cf865c77cfb01b60094aec5e4b733157"
+            "eTag": "67e6235d80481742d25f183f1287d35a"
           }
         },
         "lambda": [
@@ -26,7 +26,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-alexa-introduction-talk-default",
             "handler": "index.handler",
-            "revisionId": "4dc53ab1-9400-462f-a7b2-37129a0e796a",
+            "revisionId": "833b02e9-7191-4b9f-a26e-cb34f99fd986",
             "runtime": "nodejs10.x"
           }
         ]

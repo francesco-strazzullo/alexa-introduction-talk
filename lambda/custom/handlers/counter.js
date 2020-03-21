@@ -8,7 +8,6 @@ const CounterIntentHandler = {
   async handle (handlerInput) {
     const { counter } = handlerInput.state
     const speakOutput = handlerInput.t('COUNTER_MSG', { counter })
-    handlerInput.state.counter++
 
     return handlerInput.responseBuilder
       .speak(speakOutput)

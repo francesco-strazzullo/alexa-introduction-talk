@@ -25,6 +25,21 @@
                     ]
                 },
                 {
+                    "name": "IncrementCounterIntent",
+                    "slots": [
+                        {
+                            "name": "Value",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Incrementa il valore di {Value}",
+                        "Incrementa contatore di {Value} ",
+                        "Incrementa di {Value}",
+                        "Aumenta contatore di {Value}"
+                    ]
+                },
+                {
                     "name": "AMAZON.NavigateHomeIntent",
                     "samples": []
                 }

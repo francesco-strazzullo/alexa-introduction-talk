@@ -9,6 +9,7 @@ const ErrorHandler = require('./handlers/error')
 const LocalisationRequestInterceptor = require('./interceptors/localisation')
 const StateInterceptor = require('./interceptors/state')
 const CounterIntentHandler = require('./handlers/counter')
+const IncrementeCounterIntentHandler = require('./handlers/increment')
 
 exports.handler = Alexa.SkillBuilders.custom()
   .addRequestHandlers(
@@ -17,6 +18,7 @@ exports.handler = Alexa.SkillBuilders.custom()
     HelpIntentHandler,
     CancelAndStopIntentHandler,
     CounterIntentHandler,
+    IncrementeCounterIntentHandler,
     SessionEndedRequestHandler
   )
   .addErrorHandlers(
