@@ -9,7 +9,18 @@ const LocalisationRequestInterceptor = {
       resources: languageStrings
     })
 
-    handlerInput.t = (...args) => t(...args)
+    handlerInput.t = (key, options) => {
+      const value = t(
+        key,
+        { ...options, returnObjects: true }
+      )
+
+      if (Array.isArray(value)) {
+        return value[Math.floor(Math.random() * value.length)]
+      } else {
+        return value
+      }
+    }
   }
 }
 

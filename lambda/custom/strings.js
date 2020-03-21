@@ -11,7 +11,11 @@ module.exports = {
   },
   it: {
     translation: {
-      COUNTER_MSG: 'Valore {{counter}}',
+      COUNTER_MSG: [
+        'Il tuo valore attuale è {{counter}}',
+        'Attualmente il valore è {{counter}}',
+        'Il contatore segna {{counter}}'
+      ],
       WELCOME_MSG: 'Buongiorno! Puoi salutarmi con un ciao, o chiedermi aiuto. Cosa preferisci fare?',
       HELLO_MSG: 'Ciao!',
       HELP_MSG: 'Dimmi ciao e io ti risponderò! Come posso aiutarti?',
