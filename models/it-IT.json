@@ -31,17 +31,26 @@
                             "name": "Value",
                             "type": "AMAZON.NUMBER",
                             "samples": [
-                                "Aggiungi {Value}",
                                 "di {Value}",
                                 "{Value}"
+                            ]
+                        },
+                        {
+                            "name": "Operation",
+                            "type": "Operation",
+                            "samples": [
+                                "Fai un {Operation}",
+                                "Voglio {Operation}",
+                                "{Operation}"
                             ]
                         }
                     ],
                     "samples": [
-                        "Incrementa il valore di {Value}",
-                        "Incrementa contatore di {Value} ",
-                        "Incrementa di {Value}",
-                        "Aumenta contatore di {Value}"
+                        "{Operation} {Value}",
+                        "{Operation} il valore di {Value}",
+                        "{Operation} contatore di {Value} ",
+                        "{Operation} di {Value}",
+                        "{Operation} contatore di {Value}"
                     ]
                 },
                 {
@@ -49,7 +58,35 @@
                     "samples": []
                 }
             ],
-            "types": []
+            "types": [
+                {
+                    "name": "Operation",
+                    "values": [
+                        {
+                            "id": "decrement",
+                            "name": {
+                                "value": "decrementa",
+                                "synonyms": [
+                                    "abbassa",
+                                    "sottrai",
+                                    "diminuisci"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "increment",
+                            "name": {
+                                "value": "incrementa",
+                                "synonyms": [
+                                    "alza",
+                                    "aumenta",
+                                    "aggiungi"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
         },
         "dialog": {
             "intents": [
@@ -73,6 +110,15 @@
                                     "value": "0"
                                 }
                             ]
+                        },
+                        {
+                            "name": "Operation",
+                            "type": "Operation",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.437079528572.278676134717"
+                            }
                         }
                     ]
                 }
@@ -99,6 +145,15 @@
                     {
                         "type": "PlainText",
                         "value": "Hai aggiunto un valore minore di zero, scegli un nuovo valore"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.437079528572.278676134717",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Che operazione vuoi effettuare?"
                     }
                 ]
             }

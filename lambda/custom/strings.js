@@ -21,6 +21,11 @@ module.exports = {
         'Hai aggiunto {{value}} al tuo contatore, che ora ha un valore di {{counter}}',
         'Ho incrementato il contatore di {{value}} arrivando quindi ad un valore di {{counter}}'
       ],
+      DECREMENT_MSG: [
+        'Hai diminuito il contatore di {{value}}. il tuo valore attuale è {{counter}}',
+        'Hai sottratto {{value}} al tuo contatore, che ora ha un valore di {{counter}}',
+        'Ho decrementato il contatore di {{value}} arrivando quindi ad un valore di {{counter}}'
+      ],
       WELCOME_MSG: 'Buongiorno! Puoi salutarmi con un ciao, o chiedermi aiuto. Cosa preferisci fare?',
       HELLO_MSG: 'Ciao!',
       HELP_MSG: 'Dimmi ciao e io ti risponderò! Come posso aiutarti?',
