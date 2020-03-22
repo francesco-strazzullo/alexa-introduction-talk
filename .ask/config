@@ -6,14 +6,14 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "3f6c78fb181a5bde9a62f59ffd32ce8f"
+          "eTag": "25ce55300ce6b7411a2b0e3d793b3d7a"
         },
         "interactionModel": {
           "it-IT": {
-            "eTag": "adbcbbed315c57a0677fcc0403a21153"
+            "eTag": "96a41bfe619b7ce89485b400553757d3"
           },
           "en-US": {
-            "eTag": "6ac36b307cf620892784be316ac3f0a6"
+            "eTag": "70a435440a41608dfbbbd61ef4687d54"
           }
         },
         "lambda": [
@@ -26,7 +26,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-alexa-introduction-talk-default",
             "handler": "index.handler",
-            "revisionId": "c27fad50-ea49-4332-a110-4dacc42611c4",
+            "revisionId": "0d8db87b-d791-46ca-b7b1-a8d68bddeed8",
             "runtime": "nodejs10.x"
           }
         ]

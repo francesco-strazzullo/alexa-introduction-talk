@@ -31,4 +31,5 @@ exports.handler = Alexa.SkillBuilders.custom()
   .addResponseInterceptors(
     StateInterceptor.Response
   )
+  .withApiClient(new Alexa.DefaultApiClient())
   .lambda()
